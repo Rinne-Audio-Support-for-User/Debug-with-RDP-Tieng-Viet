@@ -1,7 +1,17 @@
 
 # 📌 Lời chào (Vietnamese Version)
 
-Vps Github Actions này được tạo bởi Rinne, vui lòng không sao chép và chỉnh sửa.
+**Vps Github Actions này được tạo bởi Rinne, vui lòng không sao chép và chỉnh sửa repo này.**
+
+**RDP Github Actions** phiên bản hình ảnh ***Windows*** gốc bởi **Github, Azure, Google Cloud Platform.** Vui lòng không sao chép và chỉnh sửa repo này.
+
+## Thông báo về phiên bản mới
+
+** • Một phiên bản **Github Windows, Ubuntu RDP** dành riêng cho các Fansub đã được tạo ra, hãy thử ngay!:**
+
++ Windows, Ubuntu cho Fansub (Bản Beta)
+https://github.com/Rinne-Audio-Support-for-User/Rdp-Windows-cho-fansub-beta
+
 
 ## 😺 Xàm xí chút
 
