@@ -7,7 +7,7 @@
 
 ## Thông báo về phiên bản mới
 
-** • Một phiên bản **Github Windows, Ubuntu RDP** dành riêng cho các Fansub đã được tạo ra, hãy thử ngay!:**
+**• Một phiên bản **Github Windows, Ubuntu RDP** dành riêng cho các Fansub đã được tạo ra, hãy thử ngay!:**
 
 + Windows, Ubuntu cho Fansub (Bản Beta)
 https://github.com/Rinne-Audio-Support-for-User/Rdp-Windows-cho-fansub-beta
