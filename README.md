@@ -3,7 +3,7 @@
 
 **Vps Github Actions này được tạo bởi Rinne, vui lòng không sao chép và chỉnh sửa repo này.**
 
-**RDP Github Actions** phiên bản hình ảnh ***Windows*** gốc bởi **Github, Azure, Google Cloud Platform.** Vui lòng không sao chép và chỉnh sửa repo này.
+**RDP Github Actions** phiên bản hình ảnh ***Windows, Ubuntu*** gốc bởi **Github, Azure, Google Cloud Platform.** Vui lòng không sao chép và chỉnh sửa repo này.
 
 ## Thông báo về phiên bản mới
 
@@ -44,7 +44,7 @@ Fork trang này về (nút trên cùng bên phải), Vào trang web [Ngrok](http
 
 + **🍎 Hệ điều hành iOS (Unix Like)**: RD Cilent, Microsoft Remote Desktop (ipa)
 
-# 🍔 Cách dùng file Ubuntu - Windows 2022 (Chrome Remote Desktop)
+# 🍔 Cách dùng file Ubuntu và Windows 2022 (Chrome Remote Desktop)
 
 + Vào Actions, chọn Ubuntu 20.04 hoặc Ubuntu 22.04
 
