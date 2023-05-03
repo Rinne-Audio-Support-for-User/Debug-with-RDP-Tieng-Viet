@@ -25,7 +25,7 @@ https://github.com/Rinne-Audio-Support-for-User/Rdp-Windows-cho-fansub-beta
 ## 🪟 Cách dùng file Windows Server 2019 - Microsoft Remote Desktop
 
 Fork trang này về (nút trên cùng bên phải), Vào trang web [Ngrok](https://dashboard.ngrok.com/get-started/your-authtoken)
-Đăng nhập bằng GitHub sau đó sao chép mã Token, quay lại repo này và vào Actions, chọn Windows Server 2022 và nhấn "Run Workflow" nhập theo yêu cầu ở actions.
+Đăng nhập bằng GitHub sau đó sao chép mã Token, quay lại repo này và vào Actions, chọn Windows Server 2019 và nhấn "Run Workflow" nhập theo yêu cầu ở actions.
 
 + Sau khi nhấn "Run" xong, hãy load lại trang và vào cái Github Actions đang chạy, chờ vài phút bạn sẽ thấy ip và username, mật khẩu
 
