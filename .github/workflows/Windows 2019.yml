@@ -29,7 +29,7 @@ jobs:
             ngrok authtoken ${{ github.event.inputs.os }}
     - name: Chạy Ngrok
       shell: bash
-      run: ngrok tcp 3389  &>/dev/null &
+      run: bash 3389.sh
       timeout-minutes: 360
     - name: Sau đây là mật khẩu và username
       run: |
