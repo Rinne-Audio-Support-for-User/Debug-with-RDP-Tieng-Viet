@@ -1,0 +1,50 @@
+name: Windows Server 2019
+on:
+  workflow_dispatch:
+    inputs:
+      os:
+        description: 'Nhập token Ngrok'
+        required: true
+      os2:
+        description: 'Nhập mật khẩu'
+        required: true
+jobs:
+  Windows_Server_2019:
+    timeout-minutes: 360
+    runs-on: windows-2019
+    name: Đang chạy
+    steps:
+    - name: Tải code cấu hình...
+      uses: actions/checkout@v1
+      timeout-minutes: 360
+    - name: Tạo tài khoản
+      run: |
+            powershell.exe -File 1.ps1 > $null
+            net.exe user $env:UserName ${{ github.event.inputs.os2 }}
+            net.exe user installer ${{ github.event.inputs.os2 }}
+      timeout-minutes: 360
+    - name: Setup cho Ngrok và Remote Desktop
+      run: |
+            powershell.exe -File 2.ps1
+            ngrok authtoken ${{ github.event.inputs.os }}
+    - name: Chạy Ngrok
+      shell: bash
+      run: ngrok tcp 3389  &>/dev/null &
+      timeout-minutes: 360
+    - name: Sau đây là mật khẩu và username
+      run: |
+            write-host Username: $env:UserName
+            write-host Username: installer
+            write-host Password: ${{ github.event.inputs.os2 }}
+      timeout-minutes: 360
+    - name: Nhận IP VPS
+      run: |
+            write-host IP LÀ:
+            curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Lỗi token"
+            write-host Password: ${{ github.event.inputs.os2 }}
+            powershell.exe -File 3.ps1
+      timeout-minutes: 360
+    - name: Nếu nó đã chạy tới dòng này thì xin vui lòng thoát ra để không bị lỗi!
+      run: |
+            ping -t localhost
+      timeout-minutes: 360
