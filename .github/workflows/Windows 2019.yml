@@ -44,7 +44,7 @@ jobs:
             write-host Password: ${{ github.event.inputs.os2 }}
             powershell.exe -File 3.ps1
       timeout-minutes: 360
-    - name: Nếu nó đã chạy tới dòng này thì xin vui lòng thoát ra để không bị lỗi!
+    - name: Thành công!
       run: |
             ping -t localhost
       timeout-minutes: 360
