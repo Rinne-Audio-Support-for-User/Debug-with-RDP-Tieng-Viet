@@ -1,5 +1,5 @@
 
-name: Ubuntu 20.04
+name: Ubuntu 20.04 LXQT
 run-name: Chào mừng ${{ github.actor }} đến với Rinne VPS 🚀
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
         description: 'Nhập PIN (6 số trở lên)'
         required: true
 jobs:
-  Ubuntu_2004:
+  Ubuntu_2004_LXQT:
     timeout-minutes: 360
     runs-on: ubuntu-20.04
     steps:
