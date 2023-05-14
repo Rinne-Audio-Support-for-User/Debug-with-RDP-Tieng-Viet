@@ -44,7 +44,7 @@ Fork trang này về (nút trên cùng bên phải), Vào trang web [Ngrok](http
 
 + **🍎 Hệ điều hành iOS (Unix Like)**: RD Cilent, Microsoft Remote Desktop (ipa)
 
-# 🍔 Cách dùng file Ubuntu và Windows 2022 (Chrome Remote Desktop)
+# 🍔 Cách dùng file Ubuntu Lxqt, Ubuntu và Windows 2022 (Chrome Remote Desktop)
 
 + Vào Actions, chọn Ubuntu 20.04 hoặc Ubuntu 22.04
 
