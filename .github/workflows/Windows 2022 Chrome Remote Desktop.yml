@@ -40,7 +40,7 @@ jobs:
       shell: bash
       run: bash 3389.sh
       timeout-minutes: 360
-    - name: Sau đây là mật khẩu và username & IP NGROK
+    - name: Mật khẩu và username & IP NGROK
       run: |
             write-host IP LÀ:
             curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Lỗi token"
@@ -55,5 +55,6 @@ jobs:
       timeout-minutes: 360
     - name: Đã xong! Chúc bạn vui vẻ
       run: |
-            ping -t localhost
+            ping -t 127.0.0.1
+            
       timeout-minutes: 360
