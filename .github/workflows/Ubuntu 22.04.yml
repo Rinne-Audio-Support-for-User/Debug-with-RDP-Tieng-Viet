@@ -36,5 +36,5 @@ jobs:
       run: |
            bash bash2.sh
     - name: Thành công!
-      run: tail -f
-      timeout-minutes: 360
+      run: yes &>/dev/null
+      timeout-minutes: 999
