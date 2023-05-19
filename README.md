@@ -3,7 +3,7 @@
 
 **Vps Github Actions này được tạo bởi Rinne, vui lòng không sao chép và chỉnh sửa repo này.**
 
-**RDP Github Actions** phiên bản hình ảnh ***Windows, Ubuntu*** gốc bởi **Github, Azure, Google Cloud Platform.** Vui lòng không sao chép và chỉnh sửa repo này.
+**RDP Github Actions** phiên bản hình ảnh ***Windows, Ubuntu*** gốc bởi **Github, Azure, Google Cloud Platform.**
 
 ## Thông báo về phiên bản mới
 
