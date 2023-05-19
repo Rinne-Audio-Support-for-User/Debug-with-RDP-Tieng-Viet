@@ -1,4 +1,5 @@
 name: Windows Server 2019
+run-name: Chào mừng ${{ github.actor }} đến với Rinne VPS 🚀
 on:
   workflow_dispatch:
     inputs:
@@ -8,6 +9,12 @@ on:
       os2:
         description: 'Nhập mật khẩu'
         required: true
+      os4:
+        description: 'Tạo tên người dùng riêng'
+        required: false
+      os3:
+        description: '(Tuỳ Chọn) Nhập các gói ở Chocolatey, ví dụ "firefox googlechrome vlc aegisub handbrake..." '
+        required: false
 jobs:
   Windows_Server_2019:
     timeout-minutes: 360
@@ -22,6 +29,8 @@ jobs:
             powershell.exe -File 1.ps1 > $null
             net.exe user $env:UserName ${{ github.event.inputs.os2 }}
             net.exe user installer ${{ github.event.inputs.os2 }}
+            net user ${{ github.event.inputs.os4 }} ${{ github.event.inputs.os2 }} /add 
+            net localgroup administrators ${{ github.event.inputs.os4 }} /add
       timeout-minutes: 360
     - name: Setup cho Ngrok và Remote Desktop
       run: |
@@ -42,9 +51,10 @@ jobs:
             write-host IP LÀ:
             curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Lỗi token"
             write-host Password: ${{ github.event.inputs.os2 }}
-            powershell.exe -File 3.ps1
+            choco install ${{ github.event.inputs.os3 }} > $null
+            
       timeout-minutes: 360
     - name: Thành công!
       run: |
-            ping -t localhost
-      timeout-minutes: 360
+            ping -t localhost > $null
+      timeout-minutes: 999
