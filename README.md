@@ -5,6 +5,10 @@
 
 **RDP Github Actions** phiên bản hình ảnh ***Windows, Ubuntu*** gốc bởi **Github, Azure, Google Cloud Platform.**
 
+## Thông báo quan trọng
+
+**• Từ ngày 20 tháng 5 năm 2023, các RDP sẽ bị xoá phần hiện thị mật khẩu khi chạy xong để bảo mật hơn, vui lòng nhớ kỹ mật khẩu bạn đã nhập.**
+
 ## Thông báo về phiên bản mới
 
 **• Một phiên bản **Github Windows, Ubuntu RDP** dành riêng cho các Fansub đã được tạo ra, hãy thử ngay!:**
