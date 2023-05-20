@@ -29,7 +29,8 @@ jobs:
            echo 'runner:${{ github.event.inputs.ps }}' | sudo chpasswd &>/dev/null &
            sudo sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd &>/dev/null &
            echo Tên người dùng là: runneradmin hoặc runner
-           echo Mật khẩu là: ${{ github.event.inputs.ps }}
+           echo Mật khẩu là: HIỂN THỊ MẬT KHẨU ĐÃ BỊ XOÁ VÌ LÍ DO BẢO MẬT
+         
            bash bash1.sh
            ${{ github.event.inputs.os }} --pin=${{ github.event.inputs.os2 }} &>/dev/null 
     - name: Trước khi kết nối VPS, bạn phải chờ cho ô này chạy xong!
