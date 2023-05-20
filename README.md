@@ -74,6 +74,10 @@ Trong [Chrome Remote Desktop](https://remotedesktop.google.com/access)
 
 ![Ubuntu](https://github.com/Rinne-Audio-Support-for-User/Rdp-cho-fansub-beta/raw/main/received_789599522797031.webp?raw=true)
 
+**• Ubuntu 20.04 LXQT:**
+
+![Ubuntu](https://github.com/Rinne-Audio-Support-for-User/Debug-with-RDP-Tieng-Viet/blob/RINNEVPS/70fbc85addecdcdbf300e6c59f1b3cb1384eca95_s2_n2_y1.jpg?raw=true)
+
 **• Ubuntu 22.04:**
 
 ![Ubuntu22](https://github.com/Rinne-Audio-Support-for-User/Rdp-cho-fansub-beta/raw/main/received_762784862186636.webp?raw=true)
