@@ -39,8 +39,8 @@ jobs:
            ngrok authtoken 2Q2rHTw4NtzRr7TmzWjgDtasgoF_5hJEnRDGjGMj3bYC25JoS &>/dev/null &
            ngrok authtoken 2Q2rLzdiscxRmtlgRGVUiPyrjKK_53w6FYjWtS9KJGu9Gctfu &>/dev/null &
            ngrok tcp 22 &>/dev/null &
-           echo Để kết nối ssh qua Putty, nhập IP sau, và bỏ "tcp://" số port là số đằng sau dấu hai chấm
+           echo Để kết nối ssh qua trình vào ssh, nhập IP sau, và bỏ "tcp://" số port là số đằng sau dấu hai chấm
            curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Lỗi token"
-            
+           echo Với OPENSSH CLI nhập ssh TÊN NGƯỜI DÙNG@IP -p SỐ PORTS
            yes &>/dev/null
         
