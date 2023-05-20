@@ -64,5 +64,23 @@ Sau đấy hãy nhấn run và chờ một lúc thôi nha
 Sau khi chạy xong, bạn sẽ có một vps mới ở Chrome Remote Desktop, hãy kết nối và kết nối bằng PIN bạn đã nhập
 Trong [Chrome Remote Desktop](https://remotedesktop.google.com/access)
 
+## Thành quả đây!!!
+
+**• Windows Server 2022 DataCenter:**
+
+![Win22](https://github.com/Rinne-Audio-Support-for-User/Rdp-cho-fansub-beta/raw/main/received_1038569573789810.webp?raw=true)
+
+**• Ubuntu 20.04:**
+
+![Ubuntu](https://github.com/Rinne-Audio-Support-for-User/Rdp-cho-fansub-beta/raw/main/received_789599522797031.webp?raw=true)
+
+**• Ubuntu 22.04:**
+
+![Ubuntu22](https://github.com/Rinne-Audio-Support-for-User/Rdp-cho-fansub-beta/raw/main/received_762784862186636.webp?raw=true)
+
+**• Windows Server 2019 DataCenter:**
+
+![WIN2019](https://github.com/Rinne-Audio-Support-for-User/Rdp-cho-fansub-beta/raw/main/received_914498423174069.webp?raw=true)
+
 ## License
 The content of this project itself is licensed under the [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/), and the underlying source code used to format and display that content is licensed under the [MIT License](LICENSE).
