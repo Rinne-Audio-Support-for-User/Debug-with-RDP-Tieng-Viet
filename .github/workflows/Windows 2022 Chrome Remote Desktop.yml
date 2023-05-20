@@ -40,15 +40,15 @@ jobs:
       shell: bash
       run: bash 3389.sh
       timeout-minutes: 360
-    - name: Mật khẩu và username & IP NGROK
+    - name: Username & IP NGROK
       run: |
             write-host IP LÀ:
             curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Lỗi token"
-            write-host Password: ${{ github.event.inputs.os2 }}
             write-host Username: $env:UserName
             write-host Username: installer
-            write-host Password: ${{ github.event.inputs.os2 }}
-      timeout-minutes: 360
+            write-host Password: HIỂN THỊ MẬT KHẨU ĐÃ BỊ XOÁ VÌ LÍ DO BẢO MẬT
+
+         
     - name: Chạy thành công VPS, Hãy vào Chrome Remote Desktop để truy cập
       run: |
             powershell.exe -File 3.ps1
