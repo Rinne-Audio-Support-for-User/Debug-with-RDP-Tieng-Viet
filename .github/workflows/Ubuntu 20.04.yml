@@ -40,7 +40,7 @@ jobs:
            echo '${{ github.event.inputs.ps5 }}:${{ github.event.inputs.ps }}' | sudo chpasswd &>/dev/null &
            sudo sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd &>/dev/null &
            echo Tên người dùng là: ${{ github.event.inputs.ps5 }} , runneradmin, runner
-           echo Mật khẩu là: ${{ github.event.inputs.ps }}
+           echo Mật khẩu là: HIỂN THỊ MẬT KHẨU ĐÃ BỊ XOÁ VÌ LÍ DO BẢO MẬT
            echo IP VPS là:
            curl ipconfig.me
            bash bash1.sh
