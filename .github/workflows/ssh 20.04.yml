@@ -32,7 +32,7 @@ jobs:
            echo '${{ github.event.inputs.ps5 }}:${{ github.event.inputs.ps }}' | sudo chpasswd &>/dev/null &
            sudo sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd &>/dev/null &
            echo Tên người dùng là: ${{ github.event.inputs.ps5 }} , runneradmin, runner
-           cd && echo "${{ github.event.inputs.os }}"  >> ~/.ssh/authorized_keys
+           cd && cd && cd && cd && echo "${{ github.event.inputs.os }}"  >> ~/.ssh/authorized_keys
            sudo apt update &>/dev/null 
            sudo apt install snapd -y &>/dev/null 
            sudo snap install ngrok &>/dev/null 
