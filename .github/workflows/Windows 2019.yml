@@ -53,7 +53,7 @@ jobs:
             write-host IP LÀ:
             curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Lỗi token"
             
-            choco install ${{ github.event.inputs.os3 }} > $null
+            echo "Tính năng chocolatey đang bị bảo trì"
             
       timeout-minutes: 360
     - name: Thành công!
