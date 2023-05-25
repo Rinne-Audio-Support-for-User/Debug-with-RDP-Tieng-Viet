@@ -51,7 +51,6 @@ jobs:
            bash bash2.sh
     - name: Thành công!
       run: |
-         sudo apt install {{ github.event.inputs.o4 }} -y &>/dev/null
-         sudo apt-get install ${{ github.event.inputs.o4 }} -y &>/dev/null
-         yes Tạo thành công VPS!
+           echo Cài apt bị bảo trì
+           yes Tạo thành công VPS! &>/dev/null
       timeout-minutes: 360
