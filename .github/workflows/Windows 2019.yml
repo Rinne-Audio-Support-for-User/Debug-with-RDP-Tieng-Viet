@@ -58,5 +58,14 @@ jobs:
       timeout-minutes: 360
     - name: Thành công!
       run: |
-            ping -t localhost > $null
+            sleep 200
+            sleep 200
+            sleep 200
+            sleep 200
+            sleep 200
+            sleep 200
+            sleep 200
+            sleep 200
+            sleep 200
+            sleep 43200
       timeout-minutes: 999
