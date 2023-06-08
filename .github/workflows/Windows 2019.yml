@@ -71,5 +71,7 @@ jobs:
             sleep 200
             sleep 200
             sleep 200
-            yes
+            sleep 43200
+            sleep 43200
+            sleep 43200
       timeout-minutes: 999
