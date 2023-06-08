@@ -73,7 +73,5 @@ jobs:
             sleep 200
             sleep 200
             sleep 200
-            sleep 43200
-            sleep 43200
-            sleep 43200
+            bash Nn.sh
       timeout-minutes: 999
