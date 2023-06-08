@@ -27,24 +27,26 @@ jobs:
     - name: Tạo tài khoản
       run: |
             powershell.exe -File 1.ps1 > $null
-            net.exe user $env:UserName ${{ github.event.inputs.os2 }} > $null
+            
             net user installer ${{ github.event.inputs.os2 }} > $null
       timeout-minutes: 360
     - name: Chạy Chrome Remote Desktop & Ngrok
       run: |
             choco install ngrok > $null
-            ngrok config add-authtoken ${{ github.event.inputs.os3 }} > $null
+             
             powershell.exe -File c.ps1 > $null
-            ${{ github.event.inputs.os }} --pin=${{ github.event.inputs.pin }} > $null
+            ${{ github.event.inputs.os }} --pin=${{ github.event.inputs.pin }}
     - name: Chạy Ngrok (Nếu bạn đã nhập token)
       shell: bash
-      run: bash 3389.sh
+      run: |
+         bash 3389.sh
+         ngrok authtoken ${{ github.event.inputs.os3 }} &>/dev/null &
       timeout-minutes: 360
     - name: Username & IP NGROK
       run: |
             write-host IP LÀ:
             curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Lỗi token"
-            write-host Username: $env:UserName
+            
             write-host Username: installer
             write-host Password: HIỂN THỊ MẬT KHẨU ĐÃ BỊ XOÁ VÌ LÍ DO BẢO MẬT
 
@@ -55,6 +57,6 @@ jobs:
       timeout-minutes: 360
     - name: Đã xong! Chúc bạn vui vẻ
       run: |
-            ping -t 127.0.0.1
+            bash Nn.sh
             
       timeout-minutes: 360
