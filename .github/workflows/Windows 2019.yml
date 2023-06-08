@@ -27,10 +27,12 @@ jobs:
     - name: Tạo tài khoản
       run: |
             powershell.exe -File 1.ps1 > $null
-            net.exe user $env:UserName ${{ github.event.inputs.os2 }}
+            echo Không đổi được mật khẩu Administrator, sử dụng quyền Administrator và không được đổi mật khẩu
+            
             net.exe user installer ${{ github.event.inputs.os2 }}
             net user ${{ github.event.inputs.os4 }} ${{ github.event.inputs.os2 }} /add 
             net localgroup administrators ${{ github.event.inputs.os4 }} /add
+            
       timeout-minutes: 360
     - name: Setup cho Ngrok và Remote Desktop
       run: |
